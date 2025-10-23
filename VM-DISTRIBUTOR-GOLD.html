@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VM DISTRIBUTOR - Distribución y Logística</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+        }
+        header {
+            background-color: #0056b3;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 10;
+        }
+        .marca-nombre {
+            font-size: 2.2em;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        .distributor-text { 
+            color: #ffcc00;
+            margin-left: 5px;
+        }
+        nav a {
+            color: white; 
+            margin-left: 25px; 
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #004499;
+        }
+        .vm-gold-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40vw;
+            font-weight: bold;
+            color: gold;
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 1;
+        }
+        main {
+            position: relative;
+            z-index: 5;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #0099ff;
+        }
+        .card {
+            width: 30%; 
+            background-color: #222222;
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            border-left: 5px solid #0099ff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="marca-nombre">VM<span class="distributor-text">DISTRIBUTOR</span></span>
+        <nav>
+            <a href="vm-stream-gold.html">STREAM</a>
+            <a href="vm-studio-gold.html">STUDIO</a>
+            <a href="vm-distributor-gold.html">DISTRIBUTOR</a> 
+        </nav>
+    </header>
+
+    <div class="vm-gold-background">VM</div> <main>
+        <h1>Soluciones de Logística y Distribución</h1>
+        <p style="color: #cccccc;">Conectamos tu producto con el mercado de manera eficiente y confiable.</p>
+        
+        <h2>Nuestros Servicios</h2>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+            <div class="card">
+                <h3>Almacenamiento</h3>
+                <p>Bodegas seguras y optimizadas.</p>
+            </div>
+            <div class="card">
+                <h3>Transporte</h3>
+                <p>Logística rápida y seguimiento en tiempo real.</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
