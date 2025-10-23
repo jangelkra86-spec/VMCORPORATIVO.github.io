@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VM DISTRIBUTOR - Distribución y Logística</title>
+    <title>VM DISTRIBUTOR - Regalías y Términos</title>
     <style>
+        /* ESTILOS GENERALES (NEGRO Y AZUL) */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #121212;
+            background-color: #121212; /* NEGRO OSCURO */
             color: #ffffff;
             text-align: center;
             overflow: hidden;
         }
         header {
-            background-color: #0056b3;
+            background-color: #0056b3; /* AZUL PRINCIPAL */
             padding: 15px 0;
             display: flex;
             justify-content: space-around;
@@ -30,7 +31,7 @@
             letter-spacing: 3px;
         }
         .distributor-text { 
-            color: #ffcc00;
+            color: #ffcc00; /* Dorado para resaltar */
             margin-left: 5px;
         }
         nav a {
@@ -45,6 +46,8 @@
         nav a:hover {
             background-color: #004499;
         }
+        
+        /* ESTILO DEL VM GRANDE EN ORO */
         .vm-gold-background {
             position: absolute;
             top: 50%;
@@ -57,21 +60,45 @@
             pointer-events: none;
             z-index: 1;
         }
+        
+        /* ESTILOS DE CONTENIDO Y TABLA */
         main {
             position: relative;
             z-index: 5;
             padding: 40px 20px;
         }
-        h1 {
+        h1, h2 {
             color: #0099ff;
         }
-        .card {
-            width: 30%; 
-            background-color: #222222;
-            padding: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-            border-left: 5px solid #0099ff;
+        
+        /* ESTILO DE LA TABLA DE REGALÍAS */
+        .price-table {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            border-collapse: collapse;
+            text-align: left;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .price-table th, .price-table td {
+            padding: 15px;
+            border-bottom: 1px solid #333;
+        }
+        .price-table th {
+            background-color: #0056b3; /* Azul oscuro */
+            color: white;
+            text-transform: uppercase;
+        }
+        .price-table tr:nth-child(even) {
+            background-color: #222; /* Filas pares más oscuras */
+        }
+        .price-table tr:hover {
+            background-color: #333; /* Resaltar al pasar el mouse */
+        }
+        .royalty-percent {
+            font-weight: bold;
+            color: #ffcc00; /* Porcentaje en Dorado */
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -86,21 +113,54 @@
         </nav>
     </header>
 
-    <div class="vm-gold-background">VM</div> <main>
-        <h1>Soluciones de Logística y Distribución</h1>
-        <p style="color: #cccccc;">Conectamos tu producto con el mercado de manera eficiente y confiable.</p>
+    <div class="vm-gold-background">VM</div> 
+    
+    <main>
+        <h1>Distribución Global con Enfoque en Regalías</h1>
+        <p style="color: #cccccc; font-size: 1.1em;">
+            Ofrecemos distribución y logística **sin costo inicial**. Nuestra ganancia se basa en un porcentaje de las regalías generadas por su contenido o producto.
+        </p>
         
-        <h2>Nuestros Servicios</h2>
-        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
-            <div class="card">
-                <h3>Almacenamiento</h3>
-                <p>Bodegas seguras y optimizadas.</p>
-            </div>
-            <div class="card">
-                <h3>Transporte</h3>
-                <p>Logística rápida y seguimiento en tiempo real.</p>
-            </div>
-        </div>
+        <h2>Modelo de Regalías y Porcentajes</h2>
+        
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Tipo de Regalía (Métrica)</th>
+                    <th>Detalles del Acuerdo</th>
+                    <th>Porcentaje de Regalía (Comisión VM)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Regalía Estándar (Venta/Uso)</td>
+                    <td>Aplica a todas las ventas de productos y licencias de contenido.</td>
+                    <td class="royalty-percent">10%</td>
+                </tr>
+                
+                <tr>
+                    <td>Regalía por Contenido Exclusivo</td>
+                    <td>Acuerdo para contenido exclusivo distribuido únicamente por VM.</td>
+                    <td class="royalty-percent">15%</td>
+                </tr>
+                
+                <tr>
+                    <td>Tarifa de Gestión de Cobro</td>
+                    <td>Porcentaje aplicado al servicio de recolección de pagos y auditoría.</td>
+                    <td class="royalty-percent">5%</td>
+                </tr>
+                
+                <tr>
+                    <td>Frecuencia de Pago al Cliente</td>
+                    <td>Los pagos de regalías se liquidan de forma mensual/trimestral.</td>
+                    <td class="royalty-percent">Mensual</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p style="margin-top: 40px; color: #cccccc;">
+            * Los porcentajes arriba son ejemplos. Los términos finales se definen en el contrato de distribución con VM.
+        </p>
     </main>
 
 </body>
